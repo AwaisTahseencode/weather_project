@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head}}
+    <title>Matrix Weather</title>
+</head>
+<body>
+    {{>header}}
+    <div class="weather">
+        <div class="weather_main">
+            <form class="input_all">
+                <input type="text" name="text" autocomplete="off" id="input" placeholder="Enter city">
+                <input type="submit" id="submit" name="submit" >
+            </form>
+            <div class="weather_container">
+                <div class="message">
+                            Your Output here
+                        </div>
+                <div class="weather_all hidden">
+                    <div class="time">
+                        <p class="date">OCT/19</p>
+                        <p class="time_actual">10:14:59</p>
+                    </div>
+                    <div class="location">
+                        <h2 id="city">Error,Error</h2>
+                    </div>
+                    <div class="temperature_main">
+                        
+                        <h3 class="temp">Error</h3>
+                        <span id="celcius">&deg;C  </span>
+                        <i class="fa-solid icony"></i>
+                                               
+                    </div>
+                    <div class="other">
+                            <span id="speed">Error</span> 
+                        <span id="fahren">Error</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{>footer}}
+</body>
+</html>
