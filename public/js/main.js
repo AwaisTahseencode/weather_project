@@ -76,7 +76,7 @@ const mainOper=async()=>{
         // cityname=input.value;
         try{
             cityname=input.value;
-            const apiData=await fetch(`http://api.weatherapi.com/v1/current.json?key=aaf471feeaf0429d957121714222306&q=${cityname}&aqi=no`)
+            const apiData=await fetch(`https://api.weatherapi.com/v1/current.json?key=aaf471feeaf0429d957121714222306&q=${cityname}&aqi=no`)
             const secData=await apiData.json()
             check=true;
             const weat=secData.current.condition.text;
